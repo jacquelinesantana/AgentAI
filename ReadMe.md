@@ -36,7 +36,7 @@ VisualStudio Code:
 
 3. Ver lista de bibliotecas que temos no projeto, comando:` pip list`
 
-4. Execute o comando em terminal PowerShell: `.\.venv\Scripts\activate`. Resultado esperado:![93b0e4b3-cebb-45a7-9368-7ff0141de335](file:///C:/Users/Jacqueline/Pictures/Typedown/93b0e4b3-cebb-45a7-9368-7ff0141de335.png)
+4. Execute o comando em terminal PowerShell: `.\.venv\Scripts\activate`. Resultado esperado:![resultado esperado](./img/93b0e4b3-cebb-45a7-9368-7ff0141de335.png)
 
 5. Agora ao executar o comando: `pip list`, vamos ver apenas os pacotes instalados para esse projeto em particular.
 
@@ -122,7 +122,7 @@ Entendendo o código:
 
 12. Execute esse comando:
        Objetivo do codigo será informar o arquivo onde inputamos as variáveis de ambiente.
-       ![a8054bdd-c472-4771-a871-403b3ed4d7ca](file:///C:/Users/Jacqueline/Pictures/Typedown/a8054bdd-c472-4771-a871-403b3ed4d7ca.png)
+       ![a8054bdd-c472-4771-a871-403b3ed4d7ca](./img/a8054bdd-c472-4771-a871-403b3ed4d7ca.png)
     
     * **`from dotenv import load_dotenv`**: Esta linha importa a função `load_dotenv` da biblioteca `dotenv`. Essa biblioteca é super útil para carregar variáveis de ambiente de um arquivo `.env` para o seu ambiente de execução. Isso é crucial para manter informações sensíveis, como chaves de API, seguras e fora do seu código-fonte principal.
     * **`_ = load_dotenv() #carrega o arquivo com a variavel de ambiente e chave da api`**: Aqui, a função `load_dotenv()` é chamada. Quando você tem um arquivo `.env` (que, no seu caso, provavelmente contém sua chave da OpenAI), essa função lê esse arquivo e disponibiliza as variáveis ali definidas para o seu programa. O `_ =` é apenas uma convenção para indicar que o valor de retorno da função não será usado diretamente, mas a ação de carregar as variáveis já ocorreu.
@@ -137,7 +137,6 @@ Entendendo o código:
     
 
 13. Criar nova célula em +Code adicionar o seguinte comando
-    
     O código a seguir define algumas caracteristicas da task do agent
 
 ```
@@ -178,8 +177,11 @@ orcamentista = Agent(
 ```
 
 * **`orcamentista = Agent(...)`**: Semelhante ao agente anterior, esta linha cria uma nova instância de agente, chamada `orcamentista`.
+
 * **`role="Orçamentista da viagem"`**: Seu papel é ser o especialista em orçamento.
+
 * **`goal="Estimar o custo total de uma viagem, considerando transporte, hospedagem, alimentação e atividades"`**: Seu objetivo é calcular os custos de forma abrangente.
+
 * **`backstory="""..."""`**: Sua história de fundo o define como um analista financeiro focado em viagens, com a missão de criar estimativas precisas. Observe que `verbose` não foi definido aqui, então o padrão será `False`, o que significa que ele será menos "tagarela" em sua saída.
   
   ---
@@ -268,7 +270,7 @@ result=viagem_crew.kickoff()
 
 O resultado esperado pode vir truncado, mas após um tempo de processamento será gerado:
 
-![a693595f-af29-44da-9136-5adc8519d33e](file:///C:/Users/Jacqueline/Pictures/Typedown/a693595f-af29-44da-9136-5adc8519d33e.png)
+![a693595f-af29-44da-9136-5adc8519d33e](./img/a693595f-af29-44da-9136-5adc8519d33e.png)
 
 Resultado:
 
@@ -382,5 +384,3 @@ Resultado:
 Este roteiro proporciona uma mistura rica de cultura, história e gastronomia, acompanhada de transporte eficiente entre as principais cidades da Europa. Todas as atividades sugeridas permitem uma experiência imersiva em cada destino. Boa viagem!
 
 ```
-
-
